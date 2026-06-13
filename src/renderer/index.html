@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;">
+    <title>Git-Style To-Do</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="app-wrapper">
+      <header class="app-header">
+        <h1>Git-Style-To-Do</h1>
+      </header>
+      <main class="split-layout">
+        <div class="left-panel">
+          <h2>Activity Calendar</h2>
+          <div class="calendar-wrapper">
+            <div id="calendar-grid" class="calendar-grid">
+              <!-- Calendar squares injected here -->
+            </div>
+          </div>
+          <div class="legend">
+            <span>Less</span>
+            <div class="legend-square level-0"></div>
+            <div class="legend-square level-1"></div>
+            <div class="legend-square level-2"></div>
+            <div class="legend-square level-3"></div>
+            <div class="legend-square level-4"></div>
+            <span>More</span>
+          </div>
+        </div>
+        <div class="right-panel">
+          <h2 id="selected-date-title">Select a Date</h2>
+          <form id="todo-form" class="todo-form">
+            <input type="text" id="todo-input" placeholder="What needs to be done?" autocomplete="off" required title="Task description">
+            <button type="submit" class="add-btn">Add Task</button>
+          </form>
+          <ul id="todo-list" class="todo-list">
+            <!-- Tasks injected here -->
+          </ul>
+        </div>
+      </main>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>

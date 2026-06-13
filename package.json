@@ -1,0 +1,27 @@
+{
+  "name": "git-style-todo",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "src/main/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.gitstyletodo.app",
+    "productName": "Git Style To-Do",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "icon.png"
+    }
+  },
+  "author": "basant",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^26.15.3"
+  }
+}
